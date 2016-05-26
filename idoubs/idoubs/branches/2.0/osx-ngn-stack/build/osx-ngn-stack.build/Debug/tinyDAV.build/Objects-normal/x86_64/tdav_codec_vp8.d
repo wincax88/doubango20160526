@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/src/codecs/vpx/tdav_codec_vp8.c \
+  ../../../../../doubango/branches/2.0/doubango/tinyDAV/include/tinydav/codecs/vpx/tdav_codec_vp8.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include/tinydav_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_codec.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_plugin.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyRTP/include/tinyrtp/rtp/trtp_rtp_packet.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyRTP/include/tinyrtp_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyRTP/include/tinyrtp/rtp/trtp_rtp_header.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_params.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_defaults.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_memory.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_time.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_encoder.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_codec.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_integer.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_image.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_decoder.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vp8cx.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vp8.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_codec_impl_top.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vpx_codec_impl_bottom.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/vpx/vp8dx.h

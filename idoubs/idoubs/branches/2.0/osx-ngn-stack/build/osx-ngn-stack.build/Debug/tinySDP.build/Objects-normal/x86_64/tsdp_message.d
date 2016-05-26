@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySDP/src/tsdp_message.c \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySDP/include/tinysdp/tsdp_message.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySDP/include/tinysdp_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_ragel_state.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_params.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_M.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_A.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_B.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_C.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_I.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_K.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_O.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_S.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_T.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_R.h \
+  ../../../../../doubango/branches/2.0/doubango/tinySDP/include/tinysdp/headers/tsdp_header_V.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h

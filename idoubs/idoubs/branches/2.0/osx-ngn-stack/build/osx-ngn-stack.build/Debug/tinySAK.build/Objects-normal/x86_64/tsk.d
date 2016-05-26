@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk.c \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_memory.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_url.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_params.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_plugin.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_options.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_fsm.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_safeobj.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_time.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_timer.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_condwait.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_semaphore.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_thread.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_runnable.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_ppfcs16.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_sha1.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_md5.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_hmac.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_base64.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_uuid.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_ragel_state.h

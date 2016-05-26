@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Release;
+		activeTarget = EC4DBE4A141C0B920024CBEF /* osx-ngn-stack */;
+		addToTargets = (
+			ECFD2692135D5DDD00E6A9A3 /* tinyRTP */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = EC4DBABF141BCEB20024CBEF /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Target_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					944,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					904,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 358761488;
+			PBXWorkspaceStateSaveDate = 358761488;
+		};
+		perUserProjectItems = {
+			EC0DDBF215623EAC00400FF3 /* PBXTextBookmark */ = EC0DDBF215623EAC00400FF3 /* PBXTextBookmark */;
+			EC0DDBF315623EAC00400FF3 /* PBXTextBookmark */ = EC0DDBF315623EAC00400FF3 /* PBXTextBookmark */;
+			EC0DDBF415623EAC00400FF3 /* PBXTextBookmark */ = EC0DDBF415623EAC00400FF3 /* PBXTextBookmark */;
+			EC0DDC0E1562401C00400FF3 /* PBXTextBookmark */ = EC0DDC0E1562401C00400FF3 /* PBXTextBookmark */;
+			EC0DDC101562401C00400FF3 /* PBXTextBookmark */ = EC0DDC101562401C00400FF3 /* PBXTextBookmark */;
+			EC0DDCC21562563A00400FF3 /* PBXTextBookmark */ = EC0DDCC21562563A00400FF3 /* PBXTextBookmark */;
+			EC37E79814E8C87000D77FE0 /* PBXTextBookmark */ = EC37E79814E8C87000D77FE0 /* PBXTextBookmark */;
+			ECA0F10F15112750005EF3BB /* PBXTextBookmark */ = ECA0F10F15112750005EF3BB /* PBXTextBookmark */;
+			ECB38561155189930035F25D /* PBXTextBookmark */ = ECB38561155189930035F25D /* PBXTextBookmark */;
+			ECB38562155189930035F25D /* PBXTextBookmark */ = ECB38562155189930035F25D /* PBXTextBookmark */;
+			ECB38563155189930035F25D /* PBXTextBookmark */ = ECB38563155189930035F25D /* PBXTextBookmark */;
+			ECB38564155189930035F25D /* PBXTextBookmark */ = ECB38564155189930035F25D /* PBXTextBookmark */;
+		};
+		sourceControlManager = EC4DBABE141BCEB20024CBEF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	EC0DDBF215623EAC00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECB384F8155174B30035F25D /* tdav_session_av.c */;
+		name = "tdav_session_av.c: 669";
+		rLen = 9;
+		rLoc = 23113;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 22791;
+	};
+	EC0DDBF315623EAC00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2B46135E7BDC00E6A9A3 /* trtp_rtcp_report_sdes.c */;
+		name = "trtp_rtcp_report_sdes.c: 163";
+		rLen = 0;
+		rLoc = 5368;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 5277;
+	};
+	EC0DDBF415623EAC00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2B4A135E7BDC00E6A9A3 /* trtp_rtcp_sdes_item.c */;
+		name = "trtp_rtcp_sdes_item.c: 79";
+		rLen = 0;
+		rLoc = 2219;
+		rType = 0;
+		vrLen = 1038;
+		vrLoc = 72;
+	};
+	EC0DDC0E1562401C00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2B4B135E7BDC00E6A9A3 /* trtp_rtcp_session.c */;
+		name = "trtp_rtcp_session.c: 574";
+		rLen = 0;
+		rLoc = 17048;
+		rType = 0;
+		vrLen = 542;
+		vrLoc = 1703;
+	};
+	EC0DDC101562401C00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2B3B135E7BDC00E6A9A3 /* trtp.h */;
+		name = "trtp.h: 12";
+		rLen = 1;
+		rLoc = 440;
+		rType = 0;
+		vrLen = 995;
+		vrLoc = 0;
+	};
+	EC0DDCC21562563A00400FF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2B3B135E7BDC00E6A9A3 /* trtp.h */;
+		name = "trtp.h: 12";
+		rLen = 1;
+		rLoc = 440;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 0;
+	};
+	EC37E79814E8C87000D77FE0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2A07135E7B8500E6A9A3 /* tnet.c */;
+		name = "tnet.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1119;
+		vrLoc = 894;
+	};
+	EC4DBABE141BCEB20024CBEF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	EC4DBABF141BCEB20024CBEF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	EC4DBB7F141BD5270024CBEF /* OSXNgnConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 675}}";
+			sepNavSelRange = "{1117, 0}";
+			sepNavVisRange = "{0, 1135}";
+		};
+	};
+	EC4DBB80141BD5270024CBEF /* OSXNgnPrivate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 702}}";
+			sepNavSelRange = "{1042, 0}";
+			sepNavVisRange = "{0, 1426}";
+		};
+	};
+	EC4DBB81141BD5270024CBEF /* OSXNgnStack.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 897}}";
+			sepNavSelRange = "{1314, 0}";
+			sepNavVisRange = "{747, 1601}";
+		};
+	};
+	EC4DBBA8141BDAAE0024CBEF /* tdav_consumer_video.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 2444}}";
+			sepNavSelRange = "{2079, 0}";
+			sepNavVisRange = "{788, 1513}";
+		};
+	};
+	EC4DBE4A141C0B920024CBEF /* osx-ngn-stack */ = {
+		activeExec = 0;
+	};
+	EC5462921426FE1600BFBF66 /* tdav_codec_vp8.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 9074}}";
+			sepNavSelRange = "{1452, 0}";
+			sepNavVisRange = "{0, 1683}";
+		};
+	};
+	EC5464D914273FE500BFBF66 /* tdav_webrtc_denoise.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1144}}";
+			sepNavSelRange = "{956, 0}";
+			sepNavVisRange = "{505, 2351}";
+		};
+	};
+	EC5464DB1427400100BFBF66 /* tdav_webrtc_denoise.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1566, 4186}}";
+			sepNavSelRange = "{7255, 0}";
+			sepNavVisRange = "{4841, 1674}";
+		};
+	};
+	EC54900B1428431D00FFA990 /* NgnContactEventArgs.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 675}}";
+			sepNavSelRange = "{1012, 0}";
+			sepNavVisRange = "{0, 1413}";
+		};
+	};
+	EC54902B1428431D00FFA990 /* NgnProxyVideoConsumer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 858}}";
+			sepNavSelRange = "{1083, 0}";
+			sepNavVisRange = "{0, 1619}";
+		};
+	};
+	EC54902C1428431D00FFA990 /* NgnProxyVideoConsumer.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 3952}}";
+			sepNavSelRange = "{7869, 0}";
+			sepNavVisRange = "{6978, 1273}";
+		};
+	};
+	EC54903A1428431D00FFA990 /* NgnEngine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 1053}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2168}";
+		};
+	};
+	EC5490401428431D00FFA990 /* NgnConfigurationService.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 4264}}";
+			sepNavSelRange = "{1433, 208}";
+			sepNavVisRange = "{1226, 1604}";
+		};
+	};
+	EC54905A1428431D00FFA990 /* NgnAVSession.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 1404}}";
+			sepNavSelRange = "{1280, 0}";
+			sepNavVisRange = "{339, 1731}";
+		};
+	};
+	EC54905B1428431D00FFA990 /* NgnAVSession.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 7878}}";
+			sepNavSelRange = "{16847, 0}";
+			sepNavVisRange = "{15594, 1258}";
+		};
+	};
+	EC81BD2D136C572C0068BCB4 /* tdav_consumer_audioqueue.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 3198}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{546, 1701}";
+		};
+	};
+	EC81BDE6136C73CF0068BCB4 /* tdav_consumer_audiounit.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 871}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1431}";
+		};
+	};
+	EC81BDE8136C73DF0068BCB4 /* tdav_consumer_audiounit.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 5525}}";
+			sepNavSelRange = "{3130, 0}";
+			sepNavVisRange = "{1917, 1791}";
+		};
+	};
+	EC81BDEA136C73F70068BCB4 /* tdav_producer_audiounit.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 884}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{374, 1297}";
+		};
+	};
+	EC81BDEC136C74090068BCB4 /* tdav_producer_audiounit.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 6942}}";
+			sepNavSelRange = "{1183, 0}";
+			sepNavVisRange = "{1081, 2072}";
+		};
+	};
+	EC81BDEE136C74220068BCB4 /* tdav_audiounit.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 845}}";
+			sepNavSelRange = "{1015, 18}";
+			sepNavVisRange = "{417, 1923}";
+		};
+	};
+	EC81BDF0136C742F0068BCB4 /* tdav_audiounit.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 4693}}";
+			sepNavSelRange = "{7793, 0}";
+			sepNavVisRange = "{6516, 2324}";
+		};
+	};
+	EC824AED136ECE9F004FC3A8 /* tdav_apple.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1014}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{828, 1443}";
+		};
+	};
+	EC8EBCDD136832D600DC70DF /* Doubango */ = {
+		activeExec = 0;
+	};
+	ECA0F0ED15112659005EF3BB /* thttp_header_Sec_WebSocket_Accept.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 4563}}";
+			sepNavSelRange = "{5061, 79}";
+			sepNavVisRange = "{4620, 1019}";
+		};
+	};
+	ECA0F10F15112750005EF3BB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD2A05135E7B8500E6A9A3 /* tnet_tls.c */;
+		name = "tnet_tls.c: 45";
+		rLen = 0;
+		rLoc = 1234;
+		rType = 0;
+		vrLen = 694;
+		vrLoc = 934;
+	};
+	ECB384F8155174B30035F25D /* tdav_session_av.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1454, 10140}}";
+			sepNavSelRange = "{23113, 9}";
+			sepNavVisRange = "{22791, 952}";
+		};
+	};
+	ECB38502155174F30035F25D /* trtp_rtcp_report_fb.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 7514}}";
+			sepNavSelRange = "{3289, 33}";
+			sepNavVisRange = "{2982, 708}";
+		};
+	};
+	ECB385051551752D0035F25D /* trtp_srtp.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 3172}}";
+			sepNavSelRange = "{977, 0}";
+			sepNavVisRange = "{663, 614}";
+		};
+	};
+	ECB38520155175C80035F25D /* trtp_rtcp_report_fb.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 1859}}";
+			sepNavSelRange = "{397, 0}";
+			sepNavVisRange = "{1343, 734}";
+		};
+	};
+	ECB38561155189930035F25D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECA0F0ED15112659005EF3BB /* thttp_header_Sec_WebSocket_Accept.c */;
+		name = "thttp_header_Sec_WebSocket_Accept.c: 167";
+		rLen = 79;
+		rLoc = 5061;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 4620;
+	};
+	ECB38562155189930035F25D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECB38520155175C80035F25D /* trtp_rtcp_report_fb.h */;
+		name = "trtp_rtcp_report_fb.h: 10";
+		rLen = 0;
+		rLoc = 397;
+		rType = 0;
+		vrLen = 734;
+		vrLoc = 1343;
+	};
+	ECB38563155189930035F25D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECB38502155174F30035F25D /* trtp_rtcp_report_fb.c */;
+		name = "trtp_rtcp_report_fb.c: 106";
+		rLen = 33;
+		rLoc = 3289;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 2982;
+	};
+	ECB38564155189930035F25D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECFD29EC135E7B8500E6A9A3 /* tnet_dns_regexp.c */;
+		name = "tnet_dns_regexp.c: 127";
+		rLen = 51;
+		rLoc = 3482;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 2922;
+	};
+	ECEB878A138AC1F700BC7BA0 /* tnet_transport_cfsocket.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 11258}}";
+			sepNavSelRange = "{976, 0}";
+			sepNavVisRange = "{0, 1550}";
+		};
+	};
+	ECFD2425135D584100E6A9A3 /* tinySAK */ = {
+		activeExec = 0;
+	};
+	ECFD24EC135D58EB00E6A9A3 /* tinyNET */ = {
+		activeExec = 0;
+	};
+	ECFD25F6135D5CD100E6A9A3 /* tinySDP */ = {
+		activeExec = 0;
+	};
+	ECFD2692135D5DDD00E6A9A3 /* tinyRTP */ = {
+		activeExec = 0;
+	};
+	ECFD2766135E79B800E6A9A3 /* tinyIPSec */ = {
+		activeExec = 0;
+	};
+	ECFD279A135E7A0200E6A9A3 /* tinyMSRP */ = {
+		activeExec = 0;
+	};
+	ECFD2850135E7ABA00E6A9A3 /* tinyHTTP */ = {
+		activeExec = 0;
+	};
+	ECFD2905135E7B5200E6A9A3 /* tinysak_config.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1404}}";
+			sepNavSelRange = "{2514, 0}";
+			sepNavVisRange = "{1663, 928}";
+		};
+	};
+	ECFD290E135E7B5200E6A9A3 /* tsk_common.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1001}}";
+			sepNavSelRange = "{2069, 45}";
+			sepNavVisRange = "{644, 1477}";
+		};
+	};
+	ECFD2934135E7B5200E6A9A3 /* tsk_string.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 8229}}";
+			sepNavSelRange = "{1078, 0}";
+			sepNavVisRange = "{533, 1141}";
+		};
+	};
+	ECFD29EC135E7B8500E6A9A3 /* tnet_dns_regexp.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 6513}}";
+			sepNavSelRange = "{3482, 51}";
+			sepNavVisRange = "{2922, 716}";
+		};
+	};
+	ECFD2A03135E7B8500E6A9A3 /* tinynet_config.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1573}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1958, 1191}";
+		};
+	};
+	ECFD2A05135E7B8500E6A9A3 /* tnet_tls.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 6344}}";
+			sepNavSelRange = "{1234, 0}";
+			sepNavVisRange = "{934, 694}";
+		};
+	};
+	ECFD2A06135E7B8500E6A9A3 /* tnet_tls.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 754}}";
+			sepNavSelRange = "{919, 10}";
+			sepNavVisRange = "{163, 1956}";
+		};
+	};
+	ECFD2A07135E7B8500E6A9A3 /* tnet.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 1638}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{894, 1119}";
+		};
+	};
+	ECFD2A17135E7B8500E6A9A3 /* tnet_transport_poll.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 11167}}";
+			sepNavSelRange = "{1011, 0}";
+			sepNavVisRange = "{0, 1369}";
+		};
+	};
+	ECFD2AD6135E7BB000E6A9A3 /* tsdp_header_A.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 5057}}";
+			sepNavSelRange = "{3824, 60}";
+			sepNavVisRange = "{3304, 1322}";
+		};
+	};
+	ECFD2B3B135E7BDC00E6A9A3 /* trtp.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 481}}";
+			sepNavSelRange = "{440, 1}";
+			sepNavVisRange = "{0, 969}";
+		};
+	};
+	ECFD2B46135E7BDC00E6A9A3 /* trtp_rtcp_report_sdes.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 2873}}";
+			sepNavSelRange = "{5368, 0}";
+			sepNavVisRange = "{5277, 783}";
+		};
+	};
+	ECFD2B4A135E7BDC00E6A9A3 /* trtp_rtcp_sdes_item.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 1885}}";
+			sepNavSelRange = "{2219, 0}";
+			sepNavVisRange = "{72, 1038}";
+		};
+	};
+	ECFD2B4B135E7BDC00E6A9A3 /* trtp_rtcp_session.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1122, 19357}}";
+			sepNavSelRange = "{17048, 0}";
+			sepNavVisRange = "{1703, 542}";
+		};
+	};
+	ECFD2CDD135E7C7D00E6A9A3 /* tinyMEDIA */ = {
+		activeExec = 0;
+	};
+	ECFD2CF3135E7CAC00E6A9A3 /* tmedia_common.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1742}}";
+			sepNavSelRange = "{2314, 78}";
+			sepNavVisRange = "{1523, 1369}";
+		};
+	};
+	ECFD2CF8135E7CAC00E6A9A3 /* tmedia_producer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 2002}}";
+			sepNavSelRange = "{2191, 5}";
+			sepNavVisRange = "{1117, 1362}";
+		};
+	};
+	ECFD2CFA135E7CAC00E6A9A3 /* tmedia_resampler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1131}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{764, 1478}";
+		};
+	};
+	ECFD2CFB135E7CAC00E6A9A3 /* tmedia_session.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 4030}}";
+			sepNavSelRange = "{24717, 23}";
+			sepNavVisRange = "{22554, 4412}";
+		};
+	};
+	ECFD2D15135E7CAC00E6A9A3 /* tmedia_resampler.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1963}}";
+			sepNavSelRange = "{1798, 10}";
+			sepNavVisRange = "{1169, 1342}";
+		};
+	};
+	ECFD2D16135E7CAC00E6A9A3 /* tmedia_session.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 18239}}";
+			sepNavSelRange = "{39181, 0}";
+			sepNavVisRange = "{11159, 1180}";
+		};
+	};
+	ECFD2D59135E7CD800E6A9A3 /* tinySIGCOMP */ = {
+		activeExec = 0;
+	};
+	ECFD2E01135E7D1000E6A9A3 /* tinySMS */ = {
+		activeExec = 0;
+	};
+	ECFD2E5A135E7D3600E6A9A3 /* tinyXCAP */ = {
+		activeExec = 0;
+	};
+	ECFD2E99135E7D6D00E6A9A3 /* tinySIP */ = {
+		activeExec = 0;
+	};
+	ECFD2EB5135E7D8900E6A9A3 /* tsip_dialog_invite.common.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 1352}}";
+			sepNavSelRange = "{1087, 0}";
+			sepNavVisRange = "{0, 1819}";
+		};
+	};
+	ECFD2EB6135E7D8900E6A9A3 /* tsip_dialog_invite.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 1248}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{418, 1289}";
+		};
+	};
+	ECFD2FAD135E7D8900E6A9A3 /* tsip_dialog_invite.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 19045}}";
+			sepNavSelRange = "{21746, 59}";
+			sepNavVisRange = "{21596, 2263}";
+		};
+	};
+	ECFD3020135E7D8900E6A9A3 /* tsip_parser_header.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 83915}}";
+			sepNavSelRange = "{187188, 66}";
+			sepNavVisRange = "{186775, 1368}";
+		};
+	};
+	ECFD3026135E7D8900E6A9A3 /* tsip_transac.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1580, 1859}}";
+			sepNavSelRange = "{3798, 0}";
+			sepNavVisRange = "{2583, 1333}";
+		};
+	};
+	ECFD3028135E7D8900E6A9A3 /* tsip_transac_ist.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 10153}}";
+			sepNavSelRange = "{23340, 0}";
+			sepNavVisRange = "{22196, 2036}";
+		};
+	};
+	ECFD3035135E7D8900E6A9A3 /* tsip_ssession.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1518, 7631}}";
+			sepNavSelRange = "{528, 0}";
+			sepNavVisRange = "{1687, 1490}";
+		};
+	};
+	ECFD3170135E7DA100E6A9A3 /* tinyDAV */ = {
+		activeExec = 0;
+	};
+	ECFD3183135E7DBB00E6A9A3 /* tdav_producer_audio.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 871}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1721}";
+		};
+	};
+	ECFD3184135E7DBB00E6A9A3 /* tdav_session_audio.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1339}}";
+			sepNavSelRange = "{1557, 0}";
+			sepNavVisRange = "{1169, 943}";
+		};
+	};
+	ECFD3188135E7DBB00E6A9A3 /* tdav_speex_resampler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 793}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{43, 1437}";
+		};
+	};
+	ECFD31BC135E7DBB00E6A9A3 /* tinydav_config.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1261}}";
+			sepNavSelRange = "{1442, 14}";
+			sepNavVisRange = "{766, 1429}";
+		};
+	};
+	ECFD31C4135E7DBB00E6A9A3 /* tdav_consumer_dsound.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 4927}}";
+			sepNavSelRange = "{2216, 23}";
+			sepNavVisRange = "{1535, 1562}";
+		};
+	};
+	ECFD31C7135E7DBB00E6A9A3 /* tdav_consumer_audio.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 3211}}";
+			sepNavSelRange = "{4848, 102}";
+			sepNavVisRange = "{3573, 1587}";
+		};
+	};
+	ECFD31C9135E7DBB00E6A9A3 /* tdav_producer_audio.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1495}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1118, 1616}";
+		};
+	};
+	ECFD31CA135E7DBB00E6A9A3 /* tdav_session_audio.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1797, 12220}}";
+			sepNavSelRange = "{7030, 0}";
+			sepNavVisRange = "{6086, 2494}";
+		};
+	};
+	ECFD31CB135E7DBB00E6A9A3 /* tdav_speakup_jitterbuffer.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 3627}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{6652, 1379}";
+		};
+	};
+	ECFD31CC135E7DBB00E6A9A3 /* tdav_speex_denoise.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 3120}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{5531, 1735}";
+		};
+	};
+	ECFD31CE135E7DBB00E6A9A3 /* tdav_speex_resampler.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1768}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{794, 1724}";
+		};
+	};
+	ECFD31E5135E7DBC00E6A9A3 /* tdav_codec_h263.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 15717}}";
+			sepNavSelRange = "{479, 0}";
+			sepNavVisRange = "{4880, 1926}";
+		};
+	};
+	ECFD31E7135E7DBC00E6A9A3 /* tdav_codec_h264.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 10569}}";
+			sepNavSelRange = "{4274, 0}";
+			sepNavVisRange = "{2237, 2242}";
+		};
+	};
+	ECFD31EC135E7DBC00E6A9A3 /* tdav_codec_mp4ves.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 8164}}";
+			sepNavSelRange = "{17189, 0}";
+			sepNavVisRange = "{16805, 1595}";
+		};
+	};
+	ECFD31F8135E7DBC00E6A9A3 /* tdav.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 7878}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{10445, 1990}";
+		};
+	};
+	ECFD31FD135E7DBC00E6A9A3 /* tdav_converter_video.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 4381}}";
+			sepNavSelRange = "{5021, 0}";
+			sepNavVisRange = "{3952, 1748}";
+		};
+	};
+	ECFD31FF135E7DBC00E6A9A3 /* tdav_session_video.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1902, 8385}}";
+			sepNavSelRange = "{6441, 0}";
+			sepNavVisRange = "{5863, 1466}";
+		};
+	};
+	ECFD32AD135E821000E6A9A3 /* tinyWRAP */ = {
+		activeExec = 0;
+	};
+	ECFD32B5135E824700E6A9A3 /* AudioResampler.cxx */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 962}}";
+			sepNavSelRange = "{2002, 27}";
+			sepNavVisRange = "{766, 1601}";
+		};
+	};
+	ECFD32B6135E824700E6A9A3 /* AudioResampler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 741}}";
+			sepNavSelRange = "{1421, 35}";
+			sepNavVisRange = "{103, 1698}";
+		};
+	};
+	ECFD32BC135E824700E6A9A3 /* MediaSessionMgr.cxx */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 3445}}";
+			sepNavSelRange = "{4324, 0}";
+			sepNavVisRange = "{3934, 1188}";
+		};
+	};
+	ECFD32C4135E824700E6A9A3 /* ProxyPluginMgr.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1664}}";
+			sepNavSelRange = "{2957, 19}";
+			sepNavVisRange = "{2271, 1385}";
+		};
+	};
+	ECFD32C6135E824700E6A9A3 /* ProxyProducer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1937}}";
+			sepNavSelRange = "{3117, 11}";
+			sepNavVisRange = "{2391, 1726}";
+		};
+	};
+	ECFD32D2135E824700E6A9A3 /* SipStack.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 1482}}";
+			sepNavSelRange = "{3242, 16}";
+			sepNavVisRange = "{1917, 1775}";
+		};
+	};
+	ECFD32D5135E824700E6A9A3 /* SipUri.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1534, 728}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1416}";
+		};
+	};
+}

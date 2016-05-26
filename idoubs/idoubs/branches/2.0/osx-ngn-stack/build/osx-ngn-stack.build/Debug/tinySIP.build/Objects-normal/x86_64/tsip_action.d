@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySIP/src/tsip_action.c \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySIP/include/tinysip/tsip_action.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySIP/include/tinysip_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_options.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_params.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_plugin.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_params.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_memory.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h

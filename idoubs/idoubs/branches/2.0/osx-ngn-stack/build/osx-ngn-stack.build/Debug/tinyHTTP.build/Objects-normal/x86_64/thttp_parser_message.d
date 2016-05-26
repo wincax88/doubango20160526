@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyHTTP/src/parsers/thttp_parser_message.c \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/parsers/thttp_parser_message.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/thttp_message.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/thttp_url.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_params.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/headers/thttp_header_Content_Length.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/headers/thttp_header.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_ragel_state.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_safeobj.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_memory.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/headers/thttp_header_Content_Type.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/parsers/thttp_parser_header.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyHTTP/include/tinyhttp/parsers/thttp_parser_url.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h

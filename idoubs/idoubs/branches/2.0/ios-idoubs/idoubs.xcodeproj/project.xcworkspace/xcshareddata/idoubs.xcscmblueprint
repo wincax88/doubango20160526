@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "98b68a54-b8e4-d874-94f5-50d40778346d",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c7b0ae48-b0eb-11de-8bdf-3374eb5c7316" : {
+
+    },
+    "98b68a54-b8e4-d874-94f5-50d40778346d" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c7b0ae48-b0eb-11de-8bdf-3374eb5c7316" : 0,
+    "98b68a54-b8e4-d874-94f5-50d40778346d" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F7E976A-B9FC-4C34-B971-B5A67D471088",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c7b0ae48-b0eb-11de-8bdf-3374eb5c7316" : "..\/..",
+    "98b68a54-b8e4-d874-94f5-50d40778346d" : "idoubs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "idoubs",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "branches\/2.0\/ios-idoubs\/idoubs.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/idoubs.googlecode.com\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98b68a54-b8e4-d874-94f5-50d40778346d"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/doubango.googlecode.com\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c7b0ae48-b0eb-11de-8bdf-3374eb5c7316"
+    }
+  ]
+}

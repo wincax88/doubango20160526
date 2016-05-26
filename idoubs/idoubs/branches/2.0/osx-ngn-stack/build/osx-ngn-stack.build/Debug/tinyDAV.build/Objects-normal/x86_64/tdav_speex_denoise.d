@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/src/audio/tdav_speex_denoise.c \
+  ../../../../../doubango/branches/2.0/doubango/tinyDAV/include/tinydav/audio/tdav_speex_denoise.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include/tinydav_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_denoise.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia_config.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_params.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_plugin.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tinysak_config.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_common.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_object.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_list.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_mutex.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_buffer.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_string.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_memory.h \
+  /Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinySAK/src/tsk_debug.h \
+  ../../../../../doubango/branches/2.0/doubango/tinyMEDIA/include/tinymedia/tmedia_defaults.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/speex/speex_preprocess.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/speex/speex_types.h \
+  ../../../../../doubango/branches/2.0/doubango/thirdparties/mac/include/speex/speex_echo.h
