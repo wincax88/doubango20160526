@@ -2,19 +2,19 @@
 * Copyright (C) 2010-2011 Mamadou Diop.
 *
 * Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
+*
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -25,7 +25,7 @@
  *
  * @author Mamadou Diop <diopmamadou(at)doubango[dot]org>
  *
- * 
+ *
  */
 #ifndef _TSDP_HEADER_M_H_
 #define _TSDP_HEADER_M_H_
@@ -61,7 +61,7 @@ TINYSDP_API tsdp_fmt_t* tsdp_fmt_create(const char* fmt);
 //#define TSDP_HEADER_M_SET_NULL()			(int)0x00
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-/// @struct	
+/// @struct
 ///
 /// @brief	SDP "m=" header (Media Descriptions).
 ///
@@ -72,31 +72,45 @@ TINYSDP_API tsdp_fmt_t* tsdp_fmt_create(const char* fmt);
 /// key-field
 /// attribute-fields)
 ///
-/// media-field	=  	%x6d "=" media SP port ["/" integer] SP proto 1*(SP fmt) CRLF 
-/// media	=  	token 
+/// media-field	=  	%x6d "=" media SP port ["/" integer] SP proto 1*(SP fmt) CRLF
+/// media	=  	token
 /// port	=  	1*DIGIT
-/// proto	=  	token *("/" token) 
-/// fmt	=  	token 
-/// 	
+/// proto	=  	token *("/" token)
+/// fmt	=  	token
+///
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-typedef struct tsdp_header_M_s
-{	
-	TSDP_DECLARE_HEADER;
-	
-	char* media;
-	uint32_t port;
-	uint32_t nports; /**< <number of ports> */
-	char* proto;
-	tsk_fmts_L_t* FMTs;
-	
-	// Fields below will be set by the message parser.
-	tsdp_header_I_t* I;
-	tsdp_header_C_t* C;
-	tsdp_headers_B_L_t* Bandwidths; // (zero or more bandwidth information lines)
-	tsdp_header_K_t* K; // (encryption key)
-	tsdp_headers_A_L_t* Attributes; // (zero or more media attribute lines)
+typedef struct tsdp_header_M_s {
+    TSDP_DECLARE_HEADER;
+
+    char* media;
+    uint32_t port;
+    uint32_t nports; /**< <number of ports> */
+    char* proto;
+    tsk_fmts_L_t* FMTs;
+
+    // Fields below will be set by the message parser.
+    tsdp_header_I_t* I;
+    tsdp_header_C_t* C;
+    tsdp_headers_B_L_t* Bandwidths; // (zero or more bandwidth information lines)
+    tsdp_header_K_t* K; // (encryption key)
+    tsdp_headers_A_L_t* Attributes; // (zero or more media attribute lines)
 }
 tsdp_header_M_t;
+
+typedef enum tsdp_header_M_diff_e {
+    tsdp_header_M_diff_none = 0x0000000,
+    tsdp_header_M_diff_hold_resume = (0x0000001 << 0),
+    tsdp_header_M_diff_index = (0x0000001 << 1),
+    tsdp_header_M_diff_codecs = (0x0000001 << 2),
+    tsdp_header_M_diff_network_info = (0x0000001 << 3),
+    tsdp_header_M_diff_ice_enabled = (0x0000001 << 4),
+    tsdp_header_M_diff_ice_restart = (0x0000001 << 5),
+    tsdp_header_M_diff_dtls_fingerprint = (0x0000001 << 6),
+    tsdp_header_M_diff_sdes_crypto = (0x0000001 << 7),
+    tsdp_header_M_diff_media_type = (0x0000001 << 8),
+    tsdp_header_M_diff_all = 0xFFFFFFFF
+}
+tsdp_header_M_diff_t;
 
 typedef tsk_list_t tsdp_headers_M_L_t;
 
@@ -110,7 +124,7 @@ TINYSDP_API int tsdp_header_M_add_headers(tsdp_header_M_t* self, ...);
 TINYSDP_API int tsdp_header_M_add_headers_2(tsdp_header_M_t* self, const tsdp_headers_L_t* headers);
 TINYSDP_API int tsdp_header_M_add_fmt(tsdp_header_M_t* self, const char* fmt);
 TINYSDP_API int tsdp_header_M_remove_fmt(tsdp_header_M_t* self, const char* fmt);
-TINYSDP_API tsk_bool_t tsdp_header_M_have_fmt(tsdp_header_M_t* self, const char* fmt);
+TINYSDP_API tsk_bool_t tsdp_header_M_have_fmt(const tsdp_header_M_t* self, const char* fmt);
 TINYSDP_API const tsdp_header_A_t* tsdp_header_M_findA_at(const tsdp_header_M_t* self, const char* field, tsk_size_t index);
 TINYSDP_API const tsdp_header_A_t* tsdp_header_M_findA(const tsdp_header_M_t* self, const char* field);
 TINYSDP_API char* tsdp_header_M_getAValue(const tsdp_header_M_t* self, const char* field, const char* fmt);
@@ -122,6 +136,9 @@ TINYSDP_API tsk_bool_t tsdp_header_M_is_held(const tsdp_header_M_t* self, tsk_bo
 TINYSDP_API int tsdp_header_M_set_holdresume_att(tsdp_header_M_t* self, tsk_bool_t lo_held, tsk_bool_t ro_held);
 TINYSDP_API const char* tsdp_header_M_get_holdresume_att(const tsdp_header_M_t* self);
 TINYSDP_API int tsdp_header_M_resume(tsdp_header_M_t* self, tsk_bool_t local);
+TINYSDP_API tsk_bool_t tsdp_header_M_is_ice_enabled(const tsdp_header_M_t* self);
+TINYSDP_API tsk_bool_t tsdp_header_M_is_ice_restart(const tsdp_header_M_t* self);
+TINYSDP_API int tsdp_header_M_diff(const tsdp_header_M_t* M_old, const tsdp_header_M_t* M_new, tsdp_header_M_diff_t* diff);
 
 TINYSDP_GEXTERN const tsk_object_def_t *tsdp_header_M_def_t;
 

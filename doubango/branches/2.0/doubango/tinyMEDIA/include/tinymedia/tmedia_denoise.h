@@ -1,20 +1,18 @@
 /*
-* Copyright (C) 2010-2011 Mamadou Diop.
+* Copyright (C) 2010-2015 Mamadou DIOP.
 *
-* Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -22,8 +20,6 @@
 
 /**@file tmedia_denoise.h
  * @brief Denoiser (Noise suppression, AGC, AEC, VAD) Plugin
- *
- * @author Mamadou Diop <diopmamadou(at)doubango[dot]org>
  */
 #ifndef TINYMEDIA_DENOISE_H
 #define TINYMEDIA_DENOISE_H
@@ -40,45 +36,43 @@ TMEDIA_BEGIN_DECLS
 #define TMEDIA_DENOISE(self)		((tmedia_denoise_t*)(self))
 
 /** Base object for all Denoisers */
-typedef struct tmedia_denoise_s
-{
-	TSK_DECLARE_OBJECT;
+typedef struct tmedia_denoise_s {
+    TSK_DECLARE_OBJECT;
 
-	tsk_bool_t opened;
-	
-	uint32_t echo_tail;
-	uint32_t echo_skew;
-	tsk_bool_t echo_supp_enabled;
-	tsk_bool_t agc_enabled ;
-	float agc_level;
-	tsk_bool_t vad_enabled;
-	tsk_bool_t noise_supp_enabled;
-	int32_t noise_supp_level;
+    tsk_bool_t opened;
+
+    uint32_t echo_tail;
+    uint32_t echo_skew;
+    tsk_bool_t echo_supp_enabled;
+    tsk_bool_t agc_enabled ;
+    float agc_level;
+    tsk_bool_t vad_enabled;
+    tsk_bool_t noise_supp_enabled;
+    int32_t noise_supp_level;
     tsk_buffer_t *record_frame;
-	tsk_buffer_t *playback_frame;
-	const struct tmedia_denoise_plugin_def_s* plugin;
+    tsk_buffer_t *playback_frame;
+    const struct tmedia_denoise_plugin_def_s* plugin;
 }
 tmedia_denoise_t;
 
 #define TMEDIA_DECLARE_DENOISE tmedia_denoise_t __denoise__
 
 /** Virtual table used to define a consumer plugin */
-typedef struct tmedia_denoise_plugin_def_s
-{
-	//! object definition used to create an instance of the denoiser
-	const tsk_object_def_t* objdef;
-	
-	//! full description (usefull for debugging)
-	const char* desc;
+typedef struct tmedia_denoise_plugin_def_s {
+    //! object definition used to create an instance of the denoiser
+    const tsk_object_def_t* objdef;
 
-	int (*set) (tmedia_denoise_t* , const tmedia_param_t*);
-	int (* open) (tmedia_denoise_t*, uint32_t record_frame_size_samples, uint32_t record_sampling_rate, uint32_t record_channels, uint32_t playback_frame_size_samples, uint32_t playback_sampling_rate, uint32_t playback_channels);
-	int (*echo_playback) (tmedia_denoise_t* self, const void* echo_frame, uint32_t echo_frame_size_bytes);
-	//! aec, vad, noise suppression, echo cancellation before sending packet over network
-	int (* process_record) (tmedia_denoise_t*, void* audio_frame, uint32_t audio_frame_size_bytes, tsk_bool_t* silence_or_noise);
-	//! noise suppression before playing sound
-	int (* process_playback) (tmedia_denoise_t*, void* audio_frame, uint32_t audio_frame_size_bytes);
-	int (* close) (tmedia_denoise_t* );
+    //! full description (usefull for debugging)
+    const char* desc;
+
+    int (*set) (tmedia_denoise_t* , const tmedia_param_t*);
+    int (* open) (tmedia_denoise_t*, uint32_t record_frame_size_samples, uint32_t record_sampling_rate, uint32_t record_channels, uint32_t playback_frame_size_samples, uint32_t playback_sampling_rate, uint32_t playback_channels);
+    int (*echo_playback) (tmedia_denoise_t* self, const void* echo_frame, uint32_t echo_frame_size_bytes);
+    //! aec, vad, noise suppression, echo cancellation before sending packet over network
+    int (* process_record) (tmedia_denoise_t*, void* audio_frame, uint32_t audio_frame_size_bytes, tsk_bool_t* silence_or_noise);
+    //! noise suppression before playing sound
+    int (* process_playback) (tmedia_denoise_t*, void* audio_frame, uint32_t audio_frame_size_bytes);
+    int (* close) (tmedia_denoise_t* );
 }
 tmedia_denoise_plugin_def_t;
 
@@ -98,4 +92,4 @@ TINYMEDIA_API tmedia_denoise_t* tmedia_denoise_create();
 TMEDIA_END_DECLS
 
 
-#endif /* TINYMEDIA_DENOISE_H */ 
+#endif /* TINYMEDIA_DENOISE_H */

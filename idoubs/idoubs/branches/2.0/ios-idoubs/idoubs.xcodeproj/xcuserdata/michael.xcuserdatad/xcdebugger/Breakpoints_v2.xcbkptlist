@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2258"
             endingLineNumber = "2258"
-            landmarkName = "_tnet_ice_ctx_recv_stun_message_for_pair()"
+            landmarkName = "_tnet_ice_ctx_fsm_OnTerminated()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2164"
             endingLineNumber = "2164"
-            landmarkName = "_tnet_ice_ctx_recv_stun_message_for_pair()"
+            landmarkName = "_tnet_ice_ctx_fsm_ConnChecking_2_ConnCheckingCompleted_X_Success()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -284,6 +284,54 @@
             startingLineNumber = "207"
             endingLineNumber = "207"
             landmarkName = "tdav_speex_denoise_process_playback()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../doubango/branches/2.0/doubango/tinyNET/src/ice/tnet_ice_ctx.c"
+            timestampString = "485944794.352289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2828"
+            endingLineNumber = "2828"
+            landmarkName = "_tnet_ice_ctx_server_add()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../doubango/branches/2.0/doubango/tinyNET/src/tnet_transport_cfsocket.c"
+            timestampString = "485944967.865809"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
+            landmarkName = "tnet_transport_sendto()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../doubango/branches/2.0/doubango/tinyIPSec/src/tipsec.c"
+            timestampString = "485947387.072002"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tipsec_ctx_create()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

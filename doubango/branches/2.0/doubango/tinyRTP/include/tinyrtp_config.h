@@ -2,19 +2,19 @@
 * Copyright (C) 2012 Doubango Telecom <http://www.doubango.org>
 *
 * Contact: Mamadou Diop <diopmamadou(at)doubango.org>
-*	
+*
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -49,13 +49,13 @@
 #	define TINYRTP_GEXTERN	extern
 #endif
 
-/* Guards against C++ name mangling 
+/* Guards against C++ name mangling
 */
 #ifdef __cplusplus
 #	define TRTP_BEGIN_DECLS extern "C" {
 #	define TRTP_END_DECLS }
 #else
-#	define TRTP_BEGIN_DECLS 
+#	define TRTP_BEGIN_DECLS
 #	define TRTP_END_DECLS
 #endif
 
@@ -71,7 +71,9 @@
 #	define __C99__
 #endif
 
-#define TRTP_RTP_VERSION 2
+#if !defined(TRTP_RTP_VERSION)
+#   define TRTP_RTP_VERSION 2
+#endif /* TRTP_RTP_VERSION */
 
 #include <stdint.h>
 #ifdef __SYMBIAN32__
@@ -80,16 +82,11 @@
 
 #if defined(__APPLE__)
 #   include <TargetConditionals.h>
+#   include <Availability.h>
 #endif
 
-// http://code.google.com/p/idoubs/issues/detail?id=111
-//#if TARGET_IPHONE_SIMULATOR
-//#   undef HAVE_SRTP
-//#   define HAVE_SRTP 0
-//#endif
-
 #if HAVE_CONFIG_H
-	#include <config.h>
+#include <config.h>
 #endif
 
 #endif // TINYRTP_CONFIG_H

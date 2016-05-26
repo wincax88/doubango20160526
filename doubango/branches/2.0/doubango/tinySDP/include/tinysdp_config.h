@@ -2,19 +2,19 @@
 * Copyright (C) 2010-2011 Mamadou Diop.
 *
 * Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
+*
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -35,6 +35,22 @@
 #	endif
 #endif
 
+// OS X or iOS
+#if defined(__APPLE__)
+#	define TSDP_UNDER_APPLE				1
+#   include <TargetConditionals.h>
+#   include <Availability.h>
+#endif
+#if TARGET_OS_MAC
+#	define TSDP_UNDER_MAC				1
+#endif
+#if TARGET_OS_IPHONE
+#	define TSDP_UNDER_IPHONE			1
+#endif
+#if TARGET_IPHONE_SIMULATOR
+#	define TSDP_UNDER_IPHONE_SIMULATOR	1
+#endif
+
 
 #if (TSDP_UNDER_WINDOWS || defined(__SYMBIAN32__)) && defined(TINYSDP_EXPORTS)
 # 	define TINYSDP_API		__declspec(dllexport)
@@ -47,13 +63,13 @@
 #	define TINYSDP_GEXTERN	extern
 #endif
 
-/* Guards against C++ name mangling 
+/* Guards against C++ name mangling
 */
 #ifdef __cplusplus
 #	define TSDP_BEGIN_DECLS extern "C" {
 #	define TSDP_END_DECLS }
 #else
-#	define TSDP_BEGIN_DECLS 
+#	define TSDP_BEGIN_DECLS
 #	define TSDP_END_DECLS
 #endif
 
@@ -77,7 +93,7 @@
 #endif
 
 #if HAVE_CONFIG_H
-	#include <config.h>
+#include <config.h>
 #endif
 
 #endif // TINYSDP_CONFIG_H

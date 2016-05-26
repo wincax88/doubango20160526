@@ -34,6 +34,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4C1CE3111CF6D61900508111 /* tnet_proxy_node_socks_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE30D1CF6D61900508111 /* tnet_proxy_node_socks_plugin.c */; };
+		4C1CE3121CF6D61900508111 /* tnet_proxy_node_socks_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1CE30E1CF6D61900508111 /* tnet_proxy_node_socks_plugin.h */; };
+		4C1CE3131CF6D61900508111 /* tnet_proxy_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE30F1CF6D61900508111 /* tnet_proxy_plugin.c */; };
+		4C1CE3141CF6D61900508111 /* tnet_proxy_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1CE3101CF6D61900508111 /* tnet_proxy_plugin.h */; };
+		4C1CE3161CF6D62900508111 /* thttp_proxy_node_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE3151CF6D62900508111 /* thttp_proxy_node_plugin.c */; };
+		4C1CE3191CF6D67500508111 /* tnet_proxydetect.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE3171CF6D67500508111 /* tnet_proxydetect.c */; };
+		4C1CE31A1CF6D67500508111 /* tnet_proxydetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1CE3181CF6D67500508111 /* tnet_proxydetect.h */; };
+		4C1CE31B1CF6D7A900508111 /* tnet_proxy_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE30F1CF6D61900508111 /* tnet_proxy_plugin.c */; };
+		4C1CE31C1CF6D7A900508111 /* tnet_proxydetect.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE3171CF6D67500508111 /* tnet_proxydetect.c */; };
+		4C1CE31D1CF6D87200508111 /* tnet_proxy_node_socks_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CE30D1CF6D61900508111 /* tnet_proxy_node_socks_plugin.c */; };
 		4CD9A8F21B69BD86009309CA /* typedefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD9A8F01B69BD86009309CA /* typedefs.h */; };
 		4CD9A8F31B69BD86009309CA /* typedefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD9A8F01B69BD86009309CA /* typedefs.h */; };
 		4CD9A8F41B69BD86009309CA /* webrtc_vad.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD9A8F11B69BD86009309CA /* webrtc_vad.h */; };
@@ -2370,6 +2380,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C1CE30D1CF6D61900508111 /* tnet_proxy_node_socks_plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tnet_proxy_node_socks_plugin.c; sourceTree = "<group>"; };
+		4C1CE30E1CF6D61900508111 /* tnet_proxy_node_socks_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tnet_proxy_node_socks_plugin.h; sourceTree = "<group>"; };
+		4C1CE30F1CF6D61900508111 /* tnet_proxy_plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tnet_proxy_plugin.c; sourceTree = "<group>"; };
+		4C1CE3101CF6D61900508111 /* tnet_proxy_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tnet_proxy_plugin.h; sourceTree = "<group>"; };
+		4C1CE3151CF6D62900508111 /* thttp_proxy_node_plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thttp_proxy_node_plugin.c; sourceTree = "<group>"; };
+		4C1CE3171CF6D67500508111 /* tnet_proxydetect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tnet_proxydetect.c; sourceTree = "<group>"; };
+		4C1CE3181CF6D67500508111 /* tnet_proxydetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tnet_proxydetect.h; sourceTree = "<group>"; };
 		4CD9A8F01B69BD86009309CA /* typedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedefs.h; sourceTree = "<group>"; };
 		4CD9A8F11B69BD86009309CA /* webrtc_vad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webrtc_vad.h; sourceTree = "<group>"; };
 		4CD9A8F61B69BD9B009309CA /* libcommon_audio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon_audio.a; sourceTree = "<group>"; };
@@ -4753,6 +4770,10 @@
 				ECFD29FB135E7B8500E6A9A3 /* stun */,
 				ECFD2A02135E7B8500E6A9A3 /* tinynet.h */,
 				ECFD2A03135E7B8500E6A9A3 /* tinynet_config.h */,
+				4C1CE30D1CF6D61900508111 /* tnet_proxy_node_socks_plugin.c */,
+				4C1CE30E1CF6D61900508111 /* tnet_proxy_node_socks_plugin.h */,
+				4C1CE30F1CF6D61900508111 /* tnet_proxy_plugin.c */,
+				4C1CE3101CF6D61900508111 /* tnet_proxy_plugin.h */,
 				ECFD2A07135E7B8500E6A9A3 /* tnet.c */,
 				ECFD2A08135E7B8500E6A9A3 /* tnet.h */,
 				ECFD2A09135E7B8500E6A9A3 /* tnet_auth.c */,
@@ -4772,6 +4793,8 @@
 				ECFD2A17135E7B8500E6A9A3 /* tnet_transport_poll.c */,
 				ECFD2A18135E7B8500E6A9A3 /* tnet_transport_win32.c */,
 				ECEB878A138AC1F700BC7BA0 /* tnet_transport_cfsocket.c */,
+				4C1CE3171CF6D67500508111 /* tnet_proxydetect.c */,
+				4C1CE3181CF6D67500508111 /* tnet_proxydetect.h */,
 				ECFD2A19135E7B8500E6A9A3 /* tnet_types.h */,
 				ECFD2A1A135E7B8500E6A9A3 /* tnet_utils.c */,
 				ECFD2A1B135E7B8500E6A9A3 /* tnet_utils.h */,
@@ -5474,6 +5497,7 @@
 				ECFD2C8E135E7C5E00E6A9A3 /* parsers */,
 				ECFD2C92135E7C5E00E6A9A3 /* thttp.c */,
 				ECFD2C93135E7C5E00E6A9A3 /* thttp_action.c */,
+				4C1CE3151CF6D62900508111 /* thttp_proxy_node_plugin.c */,
 				ECFD2C94135E7C5E00E6A9A3 /* thttp_dialog.c */,
 				ECFD2C95135E7C5E00E6A9A3 /* thttp_event.c */,
 				ECFD2C96135E7C5E00E6A9A3 /* thttp_message.c */,
@@ -7059,6 +7083,7 @@
 				ECE7E95614284CAC00466331 /* NgnVideoView.h in Headers */,
 				ECE7E95714284CAC00466331 /* NgnContact.h in Headers */,
 				ECE7E95914284CAC00466331 /* NgnFavorite.h in Headers */,
+				4C1CE3121CF6D61900508111 /* tnet_proxy_node_socks_plugin.h in Headers */,
 				ECE7E95B14284CAC00466331 /* NgnHistoryAVCallEvent.h in Headers */,
 				4CD9A8F21B69BD86009309CA /* typedefs.h in Headers */,
 				ECE7E95D14284CAC00466331 /* NgnHistoryEvent.h in Headers */,
@@ -7083,6 +7108,7 @@
 				ECE7E97B14284CAC00466331 /* INgnNetworkService.h in Headers */,
 				ECE7E97C14284CAC00466331 /* INgnSipService.h in Headers */,
 				ECE7E97D14284CAC00466331 /* INgnSoundService.h in Headers */,
+				4C1CE3141CF6D61900508111 /* tnet_proxy_plugin.h in Headers */,
 				ECE7E97E14284CAC00466331 /* INgnStorageService.h in Headers */,
 				ECE7E98014284CAC00466331 /* NgnAVSession.h in Headers */,
 				ECE7E98214284CAC00466331 /* NgnInviteSession.h in Headers */,
@@ -7099,6 +7125,7 @@
 				ECE7E99614284CAC00466331 /* NgnDateTimeUtils.h in Headers */,
 				ECE7E99814284CAC00466331 /* NgnNotificationCenter.h in Headers */,
 				ECE7E99A14284CAC00466331 /* NgnPredicate.h in Headers */,
+				4C1CE31A1CF6D67500508111 /* tnet_proxydetect.h in Headers */,
 				ECE7E99B14284CAC00466331 /* NgnStringUtils.h in Headers */,
 				ECE7E99D14284CAC00466331 /* NgnUriUtils.h in Headers */,
 				ECE7E99F14284CAC00466331 /* NSDate+Utilities.h in Headers */,
@@ -8313,10 +8340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE7E93614284CAC00466331 /* NgnContactEventArgs.mm in Sources */,
+				4C1CE3131CF6D61900508111 /* tnet_proxy_plugin.c in Sources */,
 				ECE7E93814284CAC00466331 /* NgnEventArgs.m in Sources */,
 				ECE7E93A14284CAC00466331 /* NgnFavoriteEventArgs.mm in Sources */,
 				ECE7E93C14284CAC00466331 /* NgnHistoryEventArgs.mm in Sources */,
 				ECE7E93E14284CAC00466331 /* NgnInviteEventArgs.m in Sources */,
+				4C1CE3161CF6D62900508111 /* thttp_proxy_node_plugin.c in Sources */,
 				ECE7E94014284CAC00466331 /* NgnMessagingEventArgs.m in Sources */,
 				ECE7E94214284CAC00466331 /* NgnNetworkEventArgs.mm in Sources */,
 				ECE7E94414284CAC00466331 /* NgnPublicationEventArgs.m in Sources */,
@@ -8330,6 +8359,7 @@
 				ECE7E95814284CAC00466331 /* NgnContact.m in Sources */,
 				ECE7E95A14284CAC00466331 /* NgnFavorite.mm in Sources */,
 				ECE7E95C14284CAC00466331 /* NgnHistoryAVCallEvent.mm in Sources */,
+				4C1CE3111CF6D61900508111 /* tnet_proxy_node_socks_plugin.c in Sources */,
 				ECE7E95E14284CAC00466331 /* NgnHistoryEvent.mm in Sources */,
 				ECE7E96014284CAC00466331 /* NgnHistorySMSEvent.mm in Sources */,
 				ECE7E96214284CAC00466331 /* NgnPhoneNumber.m in Sources */,
@@ -8346,6 +8376,7 @@
 				ECE7E98114284CAC00466331 /* NgnAVSession.mm in Sources */,
 				ECE7E98314284CAC00466331 /* NgnInviteSession.mm in Sources */,
 				ECE7E98514284CAC00466331 /* NgnMessagingSession.mm in Sources */,
+				4C1CE3191CF6D67500508111 /* tnet_proxydetect.c in Sources */,
 				ECE7E98714284CAC00466331 /* NgnMsrpSession.mm in Sources */,
 				ECE7E98A14284CAC00466331 /* NgnPublicationSession.mm in Sources */,
 				ECE7E98C14284CAC00466331 /* NgnRegistrationSession.mm in Sources */,
@@ -8461,6 +8492,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1CE31B1CF6D7A900508111 /* tnet_proxy_plugin.c in Sources */,
+				4C1CE31C1CF6D7A900508111 /* tnet_proxydetect.c in Sources */,
 				ECFD2A38135E7B8500E6A9A3 /* tnet_dhcp.c in Sources */,
 				ECFD2A3A135E7B8500E6A9A3 /* tnet_dhcp_message.c in Sources */,
 				EC61327819179FD2003C7245 /* tnet_stun_utils.c in Sources */,
@@ -8494,6 +8527,7 @@
 				ECFD2A72135E7B8500E6A9A3 /* tnet_tls.c in Sources */,
 				ECFD2A74135E7B8500E6A9A3 /* tnet.c in Sources */,
 				ECFD2A76135E7B8500E6A9A3 /* tnet_auth.c in Sources */,
+				4C1CE31D1CF6D87200508111 /* tnet_proxy_node_socks_plugin.c in Sources */,
 				ECFD2A78135E7B8500E6A9A3 /* tnet_endianness.c in Sources */,
 				ECFD2A7B135E7B8500E6A9A3 /* tnet_nat.c in Sources */,
 				ECFD2A7D135E7B8500E6A9A3 /* tnet_poll.c in Sources */,

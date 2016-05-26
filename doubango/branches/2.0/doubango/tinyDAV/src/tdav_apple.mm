@@ -19,15 +19,14 @@
  *
  */
 #include "tinydav/tdav_apple.h"
-#include "tdav_apple.h"
 
 #if TDAV_UNDER_APPLE
 
-#if TARGET_OS_IPHONE
+#if TDAV_UNDER_IPHONE || TDAV_UNDER_IPHONE_SIMULATOR
 #import <UIKit/UIKit.h>
-#endif
-#include <AudioToolbox/AudioToolbox.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#endif
 
 #include "tsk_debug.h"
 

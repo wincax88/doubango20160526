@@ -8,13 +8,49 @@
  *
  */
 
+/*
+ *
+ * Copyright (c) 2001-2006, Cisco Systems, Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ *   Redistributions of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ *
+ *   Redistributions in binary form must reproduce the above
+ *   copyright notice, this list of conditions and the following
+ *   disclaimer in the documentation and/or other materials provided
+ *   with the distribution.
+ *
+ *   Neither the name of the Cisco Systems, Inc. nor the names of its
+ *   contributors may be used to endorse or promote products derived
+ *   from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ * COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
 #ifndef RDBX_H
 #define RDBX_H
 
 #include "datatypes.h"
 #include "err.h"
 
-/* #define ROC_TEST */  
+/* #define ROC_TEST */
 
 #ifndef ROC_TEST
 
@@ -33,7 +69,7 @@ typedef uint16_t rollover_counter_t;   /* 16 bit rollover counter */
 
 /*
  * An xtd_seq_num_t is a 64-bit unsigned integer used as an 'extended'
- * sequence number.  
+ * sequence number.
  */
 
 typedef uint64_t xtd_seq_num_t;
@@ -45,8 +81,8 @@ typedef uint64_t xtd_seq_num_t;
  */
 
 typedef struct {
-  xtd_seq_num_t index;
-  bitvector_t bitmask;
+    xtd_seq_num_t index;
+    bitvector_t bitmask;
 } rdbx_t;
 
 
@@ -73,7 +109,7 @@ rdbx_dealloc(rdbx_t *rdbx);
 
 /*
  * rdbx_estimate_index(rdbx, guess, s)
- * 
+ *
  * given an rdbx and a sequence number s (from a newly arrived packet),
  * sets the contents of *guess to contain the best guess of the packet
  * index to which s corresponds, and returns the difference between
@@ -82,8 +118,8 @@ rdbx_dealloc(rdbx_t *rdbx);
 
 int
 rdbx_estimate_index(const rdbx_t *rdbx,
-		    xtd_seq_num_t *guess,
-		    sequence_number_t s);
+                    xtd_seq_num_t *guess,
+                    sequence_number_t s);
 
 /*
  * rdbx_check(rdbx, delta);
@@ -98,7 +134,7 @@ rdbx_check(const rdbx_t *rdbx, int difference);
 
 /*
  * replay_add_index(rdbx, delta)
- * 
+ *
  * adds the xtd_seq_num_t at rdbx->window_start + delta to replay_db
  * (and does *not* check if that xtd_seq_num_t appears in db)
  *
@@ -116,7 +152,7 @@ rdbx_add_index(rdbx_t *rdbx, int delta);
  * to have the rollover counter value roc.  If that value is less than
  * the current rollover counter value, then the function returns
  * err_status_replay_old; otherwise, err_status_ok is returned.
- * 
+ *
  */
 
 err_status_t
@@ -125,7 +161,7 @@ rdbx_set_roc(rdbx_t *rdbx, uint32_t roc);
 /*
  * rdbx_get_roc(rdbx) returns the value of the rollover counter for
  * the rdbx_t pointed to by rdbx
- * 
+ *
  */
 
 xtd_seq_num_t
@@ -160,7 +196,7 @@ index_advance(xtd_seq_num_t *pi, sequence_number_t s);
 
 /*
  * index_guess(local, guess, s)
- * 
+ *
  * given a xtd_seq_num_t local (which represents the highest
  * known-to-be-good index) and a sequence number s (from a newly
  * arrived packet), sets the contents of *guess to contain the best
@@ -170,8 +206,8 @@ index_advance(xtd_seq_num_t *pi, sequence_number_t s);
 
 int
 index_guess(const xtd_seq_num_t *local,
-		   xtd_seq_num_t *guess,
-		   sequence_number_t s);
+            xtd_seq_num_t *guess,
+            sequence_number_t s);
 
 
 #endif /* RDBX_H */

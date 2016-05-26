@@ -29,37 +29,37 @@ TNET_BEGIN_DECLS
 
 struct tnet_turn_session_s;
 struct tnet_socket_s;
+struct tnet_proxyinfo_s;
 enum tnet_socket_type_e;
 #define kTurnPeerIdInvalid -1
 
-typedef enum tnet_turn_session_event_type_e
-{
-	tnet_turn_session_event_type_alloc_ok,
-	tnet_turn_session_event_type_alloc_nok,
-	tnet_turn_session_event_type_refresh_ok,
-	tnet_turn_session_event_type_refresh_nok,
-	tnet_turn_session_event_type_perm_ok,
-	tnet_turn_session_event_type_perm_nok,
-	tnet_turn_session_event_type_recv_data,
-	tnet_turn_session_event_type_chanbind_ok,
-	tnet_turn_session_event_type_chanbind_nok,
-	tnet_turn_session_event_type_connect_ok,
-	tnet_turn_session_event_type_connect_nok,
-	tnet_turn_session_event_type_connectionbind_ok,
-	tnet_turn_session_event_type_connectionbind_nok,
+typedef enum tnet_turn_session_event_type_e {
+    tnet_turn_session_event_type_alloc_ok,
+    tnet_turn_session_event_type_alloc_nok,
+    tnet_turn_session_event_type_refresh_ok,
+    tnet_turn_session_event_type_refresh_nok,
+    tnet_turn_session_event_type_perm_ok,
+    tnet_turn_session_event_type_perm_nok,
+    tnet_turn_session_event_type_recv_data,
+    tnet_turn_session_event_type_chanbind_ok,
+    tnet_turn_session_event_type_chanbind_nok,
+    tnet_turn_session_event_type_connect_ok,
+    tnet_turn_session_event_type_connect_nok,
+    tnet_turn_session_event_type_connectionbind_ok,
+    tnet_turn_session_event_type_connectionbind_nok,
 }
 tnet_turn_session_event_type_t;
 
 typedef struct tnet_turn_session_event_xs {
-	enum tnet_turn_session_event_type_e e_type;
-	tnet_turn_peer_id_t u_peer_id;
-	const void* pc_usr_data;
-	const struct tnet_transport_event_s* pc_enet;
-	struct tnet_turn_session_s* pc_session;
-	struct {
-		const void* pc_data_ptr;
-		tsk_size_t u_data_size;
-	} data;
+    enum tnet_turn_session_event_type_e e_type;
+    tnet_turn_peer_id_t u_peer_id;
+    const void* pc_usr_data;
+    const struct tnet_transport_event_s* pc_enet;
+    struct tnet_turn_session_s* pc_session;
+    struct {
+        const void* pc_data_ptr;
+        tsk_size_t u_data_size;
+    } data;
 } tnet_turn_session_event_xt;
 
 typedef int (*tnet_turn_session_callback_f)(const struct tnet_turn_session_event_xs *e);
@@ -74,6 +74,8 @@ TINYNET_API int tnet_turn_session_create_4(struct tnet_socket_s* p_lcl_sock, enu
 TINYNET_API int tnet_turn_session_set_cred(struct tnet_turn_session_s* p_self, const char* pc_usr_name, const char* pc_pwd);
 TINYNET_API int tnet_turn_session_set_callback(struct tnet_turn_session_s* p_self, tnet_turn_session_callback_f f_fun, const void* pc_usr_data);
 TINYNET_API int tnet_turn_session_set_ssl_certs(struct tnet_turn_session_s* p_self, const char* path_priv, const char* path_pub, const char* path_ca, tsk_bool_t verify);
+TINYNET_API int tnet_turn_session_set_proxy_auto_detect(struct tnet_turn_session_s* p_self, tsk_bool_t auto_detect);
+TINYNET_API int tnet_turn_session_set_proxy_info(struct tnet_turn_session_s* p_self, struct tnet_proxyinfo_s* info);
 TINYNET_API int tnet_turn_session_prepare(struct tnet_turn_session_s* p_self);
 TINYNET_API int tnet_turn_session_start(struct tnet_turn_session_s* p_self);
 TINYNET_API int tnet_turn_session_allocate(struct tnet_turn_session_s* p_self);
@@ -84,6 +86,7 @@ TINYNET_API int tnet_turn_session_get_socket_local(struct tnet_turn_session_s* p
 TINYNET_API int tnet_turn_session_get_state_createperm(const struct tnet_turn_session_s* pc_self, tnet_turn_peer_id_t u_peer_id, enum tnet_stun_state_e *pe_state);
 TINYNET_API int tnet_turn_session_get_state_connbind(const struct tnet_turn_session_s* pc_self, tnet_turn_peer_id_t u_peer_id, enum tnet_stun_state_e *pe_state);
 TINYNET_API int tnet_turn_session_get_req_transport(const struct tnet_turn_session_s* pc_self, enum tnet_turn_transport_e *pe_transport);
+TINYNET_API int tnet_turn_session_get_bytes_count(const struct tnet_turn_session_s* pc_self, uint64_t* bytes_in, uint64_t* bytes_out);
 TINYNET_API int tnet_turn_session_createpermission(struct tnet_turn_session_s* p_self, const char* pc_peer_addr, uint16_t u_peer_port, tnet_turn_peer_id_t* pu_peer_id);
 TINYNET_API int tnet_turn_session_deletepermission(struct tnet_turn_session_s* p_self, tnet_turn_peer_id_t u_peer_id);
 TINYNET_API int tnet_turn_session_chanbind(struct tnet_turn_session_s* p_self, tnet_turn_peer_id_t u_peer_id);

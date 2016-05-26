@@ -1,20 +1,18 @@
 /*
-* Copyright (C) 2010-2011 Mamadou Diop.
+* Copyright (C) 2010-2015 Mamadou DIOP.
 *
-* Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -23,9 +21,6 @@
 /**@file tnet_utils.h
  * @brief Network utility functions.
  *
- * @author Mamadou Diop <diopmamadou(at)doubango[dot]org>
- *
-
  */
 #ifndef TNET_UTILS_H
 #define TNET_UTILS_H
@@ -39,37 +34,37 @@ TNET_BEGIN_DECLS
 
 /**@ingroup tnet_utils_group
 */
-#define TNET_CONNECT_TIMEOUT		2000
+#if !defined(TNET_CONNECT_TIMEOUT)
+#	define TNET_CONNECT_TIMEOUT		2000
+#endif /* TNET_CONNECT_TIMEOUT */
 
 /**Interface.
 */
-typedef struct tnet_interface_s
-{
-	TSK_DECLARE_OBJECT;
-	
-	unsigned index;
+typedef struct tnet_interface_s {
+    TSK_DECLARE_OBJECT;
 
-	char* description;
-	uint8_t* mac_address;
-	tsk_size_t mac_address_length;
+    unsigned index;
+
+    char* description;
+    uint8_t* mac_address;
+    tsk_size_t mac_address_length;
 }
 tnet_interface_t;
 
 
 /**Address.
 */
-typedef struct tnet_address_s
-{
-	TSK_DECLARE_OBJECT;
+typedef struct tnet_address_s {
+    TSK_DECLARE_OBJECT;
 
-	tnet_family_t family;
+    tnet_family_t family;
 
-	unsigned unicast:1;
-	unsigned anycast:1;
-	unsigned multicast:1;
-	unsigned dnsserver:1;
+    unsigned unicast:1;
+    unsigned anycast:1;
+    unsigned multicast:1;
+    unsigned dnsserver:1;
 
-	char* ip;
+    char* ip;
 }
 tnet_address_t;
 
@@ -91,14 +86,16 @@ TINYNET_API tnet_addresses_L_t* tnet_get_addresses(tnet_family_t family, tsk_boo
 #define tnet_get_addresses_all_dnsservers()	tnet_get_addresses(AF_UNSPEC, 0, 0, 0, 1, -1)
 #define tnet_get_addresses_dnsservers4()	tnet_get_addresses(AF_INET, 0, 0, 0, 1, -1)
 #define tnet_get_addresses_dnsservers6()	tnet_get_addresses(AF_INET6, 0, 0, 0, 1, -1)
+TINYNET_API int tnet_get_mac_address(tnet_mac_address* address);
 
 TINYNET_API int tnet_getbestsource(const char* destination, tnet_port_t port, tnet_socket_type_t type, tnet_ip_t *source);
 TINYNET_API int tnet_getaddrinfo(const char *node, const char *service, const struct addrinfo *hints,  struct addrinfo **res);
 TINYNET_API void tnet_freeaddrinfo(struct addrinfo *ai);
 TINYNET_API int tnet_getsockname(tnet_fd_t fd, struct sockaddr_storage *result);
 TINYNET_API int tnet_getpeername(tnet_fd_t fd, struct sockaddr_storage *result);
-TINYNET_API tnet_socket_type_t tnet_get_socket_type(tnet_fd_t fd);
 TINYNET_API tnet_family_t tnet_get_family(const char* host, tnet_port_t port);
+TINYNET_API tnet_socket_type_t tnet_get_type(const char* host, tnet_port_t port);
+TINYNET_API tsk_bool_t tnet_is_ipv6(const char* host, tnet_port_t port);
 TINYNET_API int tnet_get_ip_n_port(tnet_fd_t fd, tsk_bool_t getlocal, tnet_ip_t *ip, tnet_port_t *port);
 TINYNET_API int tnet_get_sockip_n_port(const struct sockaddr *addr, tnet_ip_t *ip, tnet_port_t *port);
 TINYNET_API int tnet_get_peerip_n_port(tnet_fd_t localFD, tnet_ip_t *ip, tnet_port_t *port);
@@ -160,6 +157,9 @@ TINYNET_API tnet_fd_t tnet_sockfd_accept(tnet_fd_t fd, struct sockaddr *addr, so
 
 TINYNET_API int tnet_sockfd_close(tnet_fd_t *fd);
 TINYNET_API int tnet_sockfd_shutdown(tnet_fd_t fd);
+
+TINYNET_API tnet_proxy_type_t tnet_proxy_type_from_string(const char* type);
+TINYNET_API const char* tnet_proxy_type_to_string(tnet_proxy_type_t type);
 
 /**Prints last network error to @b stderr.
 */

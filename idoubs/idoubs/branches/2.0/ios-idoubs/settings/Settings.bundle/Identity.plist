@@ -24,7 +24,7 @@
 			<key>Key</key>
 			<string>IDENTITY_IMPU</string>
 			<key>DefaultValue</key>
-			<string>sip:10061@192.168.0.3</string>
+			<string>sip:10061@123.57.153.80</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -54,7 +54,7 @@
 			<key>Key</key>
 			<string>NETWORK_REALM</string>
 			<key>DefaultValue</key>
-			<string>192.168.0.3</string>
+			<string>123.57.153.80</string>
 		</dict>
 		<dict>
 			<key>Type</key>

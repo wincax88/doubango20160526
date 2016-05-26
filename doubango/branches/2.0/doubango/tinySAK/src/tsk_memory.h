@@ -2,19 +2,19 @@
 * Copyright (C) 2010-2011 Mamadou Diop.
 *
 * Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
+*
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -45,8 +45,10 @@
 
 TSK_BEGIN_DECLS
 
-#define TSK_SAFE_FREE(ptr) (void)tsk_free((void**)(&ptr));
+#define TSK_SAFE_FREE(ptr) (void)tsk_free((void**)(&ptr))
+#define TSK_SAFE_FREE_ALIGNED(ptr) (void)tsk_free_aligned((void**)(&ptr))
 #define TSK_FREE(ptr) TSK_SAFE_FREE((ptr))
+#define TSK_FREE_ALIGNED(ptr) TSK_SAFE_FREE_ALIGNED((ptr))
 #define TSK_SAFE_FREE_ARRAY(pptr, count){ \
 	int __i; \
 	for(__i = 0; __i < (count); ++__i) \
@@ -60,6 +62,11 @@ TINYSAK_API void* tsk_malloc(tsk_size_t size);
 TINYSAK_API void* tsk_realloc (void * ptr, tsk_size_t size);
 TINYSAK_API void tsk_free(void** ptr);
 TINYSAK_API void* tsk_calloc(tsk_size_t num, tsk_size_t size);
+
+TINYSAK_API void* tsk_malloc_aligned(tsk_size_t size, tsk_size_t alignment);
+TINYSAK_API void* tsk_realloc_aligned(void * ptr, tsk_size_t size, tsk_size_t alignment);
+TINYSAK_API void tsk_free_aligned(void** ptr);
+TINYSAK_API void* tsk_calloc_aligned(tsk_size_t num, tsk_size_t size, tsk_size_t alignment);
 
 TSK_END_DECLS
 

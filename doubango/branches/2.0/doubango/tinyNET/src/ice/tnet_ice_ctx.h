@@ -1,20 +1,18 @@
 /*
-* Copyright (C) 2012 Doubango Telecom <http://www.doubango.org>.
+* Copyright (C) 2012-2015 Doubango Telecom <http://www.doubango.org>.
 *
-* Contact: Mamadou Diop <diopmamadou(at)doubango[dot]org>
-*	
 * This file is part of Open Source Doubango Framework.
 *
 * DOUBANGO is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
-*	
+*
 * DOUBANGO is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU General Public License
 * along with DOUBANGO.
 *
@@ -22,7 +20,6 @@
 
 /**@file tnet_ice_ctx.h
  * @brief Interactive Connectivity Establishment (ICE) implementation as per RFC 5245.
- * @author Mamadou Diop <diopmamadou(at)doubango[dot]org>
  */
 
 #ifndef TNET_ICE_CTX_H
@@ -49,21 +46,21 @@ TINYNET_API struct tnet_ice_ctx_s* tnet_ice_ctx_create(tsk_bool_t is_ice_jingle,
 TINYNET_API int tnet_ice_ctx_set_userdata(struct tnet_ice_ctx_s* self, const void* userdata);
 //@deprecated: Use "tnet_ice_ctx_add_server()"
 TNET_DEPRECATED(TINYNET_API int tnet_ice_ctx_set_stun(
-	struct tnet_ice_ctx_s* self, 
-	const char* server_addr, 
-	uint16_t server_port, 
-	const char* software, 
-	const char* username, 
-	const char* password));
+                    struct tnet_ice_ctx_s* self,
+                    const char* server_addr,
+                    uint16_t server_port,
+                    const char* software,
+                    const char* username,
+                    const char* password));
 TINYNET_API int tnet_ice_ctx_add_server(
-	struct tnet_ice_ctx_s* self,
-	const char* transport_proto, // "udp", "tcp", "tls", "ws", "wss"...
-	const char* server_addr, 
-	uint16_t server_port,
-	tsk_bool_t use_turn,
-	tsk_bool_t use_stun,
-	const char* username, 
-	const char* password);
+    struct tnet_ice_ctx_s* self,
+    const char* transport_proto, // "udp", "tcp", "tls", "ws", "wss"...
+    const char* server_addr,
+    uint16_t server_port,
+    tsk_bool_t use_turn,
+    tsk_bool_t use_stun,
+    const char* username,
+    const char* password);
 #define tnet_ice_ctx_add_server_turn(self, transport_proto, server_addr, server_port, username, password) \
 	tnet_ice_ctx_add_server((self), (transport_proto), (server_addr), (server_port), tsk_true/*use_turn*/, tsk_false/*use_stun*/, (username), (password))
 #define tnet_ice_ctx_add_server_stun(self, transport_proto, server_addr, server_port, username, password) \
@@ -76,6 +73,7 @@ TINYNET_API int tnet_ice_ctx_start(struct tnet_ice_ctx_s* self);
 TINYNET_API int tnet_ice_ctx_rtp_callback(struct tnet_ice_ctx_s* self, tnet_ice_rtp_callback_f rtp_callback, const void* rtp_callback_data);
 TINYNET_API int tnet_ice_ctx_set_concheck_timeout(struct tnet_ice_ctx_s* self, int64_t timeout);
 TINYNET_API int tnet_ice_ctx_set_remote_candidates(struct tnet_ice_ctx_s* self, const char* candidates, const char* ufrag, const char* pwd, tsk_bool_t is_controlling, tsk_bool_t is_ice_jingle);
+TINYNET_API int tnet_ice_ctx_set_remote_candidates_2(struct tnet_ice_ctx_s* self, const char* candidates, const char* ufrag, const char* pwd, tsk_bool_t is_controlling, tsk_bool_t is_ice_jingle, tsk_bool_t use_rtcpmux);
 TINYNET_API int tnet_ice_ctx_set_rtcpmux(struct tnet_ice_ctx_s* self, tsk_bool_t use_rtcpmux);
 TINYNET_API int tnet_ice_ctx_set_ssl_certs(struct tnet_ice_ctx_s* self, const char* path_priv, const char* path_pub, const char* path_ca, tsk_bool_t verify);
 TINYNET_API tsk_size_t tnet_ice_ctx_count_local_candidates(const struct tnet_ice_ctx_s* self);
@@ -92,15 +90,19 @@ TINYNET_API tsk_bool_t tnet_ice_ctx_is_can_recv(const struct tnet_ice_ctx_s* sel
 TINYNET_API tsk_bool_t tnet_ice_ctx_use_ipv6(const struct tnet_ice_ctx_s* self);
 TINYNET_API tsk_bool_t tnet_ice_ctx_use_rtcp(const struct tnet_ice_ctx_s* self);
 TINYNET_API int tnet_ice_ctx_get_nominated_symetric_candidates(const struct tnet_ice_ctx_s* self, uint32_t comp_id,
-										  const struct tnet_ice_candidate_s** candidate_offer, 
-										  const struct tnet_ice_candidate_s** candidate_answer_src,
-										  const struct tnet_ice_candidate_s** candidate_answer_dest);
+        const struct tnet_ice_candidate_s** candidate_offer,
+        const struct tnet_ice_candidate_s** candidate_answer_src,
+        const struct tnet_ice_candidate_s** candidate_answer_dest);
 TINYNET_API int tnet_ice_ctx_recv_stun_message(struct tnet_ice_ctx_s* self, const void* data, tsk_size_t size, tnet_fd_t local_fd, const struct sockaddr_storage* remote_addr, tsk_bool_t *role_conflict);
 TINYNET_API int tnet_ice_ctx_send_turn_rtp(struct tnet_ice_ctx_s* self, const void* data, tsk_size_t size);
 TINYNET_API int tnet_ice_ctx_send_turn_rtcp(struct tnet_ice_ctx_s* self, const void* data, tsk_size_t size);
 
+TINYNET_API int tnet_ice_ctx_turn_get_bytes_count(const struct tnet_ice_ctx_s* self, uint64_t* bytes_in, uint64_t* bytes_out);
 TINYNET_API const char* tnet_ice_ctx_get_ufrag(const struct tnet_ice_ctx_s* self);
 TINYNET_API const char* tnet_ice_ctx_get_pwd(const struct tnet_ice_ctx_s* self);
+
+TINYNET_API int tnet_ice_ctx_set_proxy_auto_detect(struct tnet_ice_ctx_s* self, tsk_bool_t auto_detect);
+TINYNET_API int tnet_ice_ctx_set_proxy_info(struct tnet_ice_ctx_s* self, enum tnet_proxy_type_e type, const char* host, tnet_port_t port, const char* login, const char* password);
 
 TINYNET_API int tnet_ice_ctx_cancel(struct tnet_ice_ctx_s* self);
 TINYNET_API int tnet_ice_ctx_stop(struct tnet_ice_ctx_s* self);
