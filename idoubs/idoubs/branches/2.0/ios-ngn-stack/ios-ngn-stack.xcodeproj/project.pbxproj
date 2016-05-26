@@ -9791,7 +9791,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include,
+					"\"$(SRCROOT)/../../../../../doubango/branches/2.0/doubango/tinyDAV/include\"",
 				);
 				PRODUCT_NAME = ios_ngn_stack;
 			};
@@ -9813,7 +9813,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include,
+					"\"$(SRCROOT)/../../../../../doubango/branches/2.0/doubango/tinyDAV/include\"",
 				);
 				PRODUCT_NAME = ios_ngn_stack;
 			};
@@ -10878,7 +10878,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include,
+					"\"$(SRCROOT)/../../../../../doubango/branches/2.0/doubango/tinyDAV/include\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = tinyDAV;
@@ -10906,7 +10906,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/michael/Documents/Research/idoubs_20150603/doubango/branches/2.0/doubango/tinyDAV/include,
+					"\"$(SRCROOT)/../../../../../doubango/branches/2.0/doubango/tinyDAV/include\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = tinyDAV;
